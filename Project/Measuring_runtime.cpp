@@ -8,9 +8,9 @@ auto time() {
     return std::chrono::high_resolution_clock::now();
 }
 
-int main() {
+void timeTest(int size) {
+    std::printf("\nSize : %d\n",size);
     auto time_point = time();
-    int size = 1000;
     int tab[size];
     for(int i=0; i<size;i++) {
         tab[i] = i*2;
@@ -26,6 +26,11 @@ int main() {
     auto duree2 = time()-time_point2;
     std::cout << "Sum duration : "<< duree2 << "\n";
     std::printf("Sum = %d\n",sum);
+}
 
+int main() {
+    timeTest(1000);
+    timeTest(10000);
+    timeTest(100000);
     return 0;
 }
