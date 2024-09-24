@@ -10,10 +10,20 @@ auto time() {
 
 int main() {
     auto time_point = time();
-    int tab[1000];
-    for(int i=0; i<1000;i++) {
+    int size = 1000;
+    int tab[size];
+    for(int i=0; i<size;i++) {
         tab[i] = i*2;
     }
-    std::cout << time()-time_point;
+    std::cout << "Creation duration : "<<time()-time_point << "\n";
+
+    auto time_point2 = time();
+    int sum = 0;
+    for(int i:tab) {
+        sum += i;
+    }
+    std::printf("Sum = %d\n",sum);
+    std::cout << "Sum duration : "<<time()-time_point2 << "\n";
+
     return 0;
 }
