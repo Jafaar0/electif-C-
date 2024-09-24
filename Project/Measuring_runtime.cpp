@@ -15,15 +15,17 @@ int main() {
     for(int i=0; i<size;i++) {
         tab[i] = i*2;
     }
-    std::cout << "Creation duration : "<<time()-time_point << "\n";
+    auto duree = time()-time_point;
+    std::cout << "Creation duration : "<< duree << "\n";
 
     auto time_point2 = time();
     int sum = 0;
     for(int i:tab) {
         sum += i;
     }
+    auto duree2 = time()-time_point2;
+    std::cout << "Sum duration : "<< duree2 << "\n";
     std::printf("Sum = %d\n",sum);
-    std::cout << "Sum duration : "<<time()-time_point2 << "\n";
 
     return 0;
 }
