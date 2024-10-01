@@ -106,6 +106,39 @@ build Exo2.exe: CXX_EXECUTABLE_LINKER__Exo2_Debug CMakeFiles/Exo2.dir/Measuring_
   TARGET_IMPLIB = libExo2.dll.a
   TARGET_PDB = Exo2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Exo3
+
+
+#############################################
+# Order-only phony target for Exo3
+
+build cmake_object_order_depends_target_Exo3: phony || .
+
+build CMakeFiles/Exo3.dir/Computation.cpp.obj: CXX_COMPILER__Exo3_unscanned_Debug C$:/Users/hhaym/Documents/TD$ C++/electif-C-/Project/Computation.cpp || cmake_object_order_depends_target_Exo3
+  DEP_FILE = CMakeFiles\Exo3.dir\Computation.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Exo3.dir
+  OBJECT_FILE_DIR = CMakeFiles\Exo3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Exo3
+
+
+#############################################
+# Link the executable Exo3.exe
+
+build Exo3.exe: CXX_EXECUTABLE_LINKER__Exo3_Debug CMakeFiles/Exo3.dir/Computation.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Exo3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Exo3.exe
+  TARGET_IMPLIB = libExo3.dll.a
+  TARGET_PDB = Exo3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,6 +167,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Exo2: phony Exo2.exe
 
+build Exo3: phony Exo3.exe
+
 build Project: phony Project.exe
 
 # =============================================================================
@@ -144,7 +179,7 @@ build Project: phony Project.exe
 #############################################
 # Folder: C:/Users/hhaym/Documents/TD C++/electif-C-/Project/cmake-build-debug
 
-build all: phony Project.exe Exo2.exe
+build all: phony Project.exe Exo2.exe Exo3.exe
 
 # =============================================================================
 # Built-in targets
