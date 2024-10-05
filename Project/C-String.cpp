@@ -31,9 +31,37 @@ int compare(char s[], char t[]) {
     }
 }
 
+bool palindrome(char s[]) {
+    int lens = mylen(s);
+    int demi = lens/2;
+    for (int i = 0; i < demi; i++) {
+        if(s[i] != s[lens-1-i]) {
+            return false;
+        }
+    }
+    return true;
+
+}
+
+void reverse(char s[]) {
+    int lens = mylen(s);
+    char rev[lens+1];
+    rev[lens] = '\0';
+    for(int i = 0; i <lens; i++) {
+        rev[lens-1-i] = s[i];
+    }
+    printf("%s",rev);
+}
+
 
 int main() {
-    char s[] = {'h','e','l','l','\0'};
-    char t[] = {'h','e','l','l','o','\0'};
+    // char s[] = {'h','e','l','l','\0'};
+    // char t[] = {'h','e','l','l','o','\0'};
+    char s[] = {'r','i','z','z','\0'};
+    char t[] = {'r','i','z','z','l','e','r','\0'};
+    char pal[] = {'t','a','c','o','c','a','t','\0'};
     printf("%d\n", compare(s,t));
+    printf("%s\n", palindrome(s) ? "true" : "false");
+    printf("%s\n", palindrome(pal) ? "true" : "false");
+    reverse(s);
 }
