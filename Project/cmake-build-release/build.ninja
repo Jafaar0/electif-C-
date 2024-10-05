@@ -139,6 +139,39 @@ build Exo3.exe: CXX_EXECUTABLE_LINKER__Exo3_Release CMakeFiles/Exo3.dir/Computat
   TARGET_IMPLIB = libExo3.dll.a
   TARGET_PDB = Exo3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Exo4
+
+
+#############################################
+# Order-only phony target for Exo4
+
+build cmake_object_order_depends_target_Exo4: phony || .
+
+build CMakeFiles/Exo4.dir/C-String.cpp.obj: CXX_COMPILER__Exo4_unscanned_Release C$:/Users/hhaym/Documents/TD$ C++/electif-C-/Project/C-String.cpp || cmake_object_order_depends_target_Exo4
+  DEP_FILE = CMakeFiles\Exo4.dir\C-String.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Exo4.dir
+  OBJECT_FILE_DIR = CMakeFiles\Exo4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Exo4
+
+
+#############################################
+# Link the executable Exo4.exe
+
+build Exo4.exe: CXX_EXECUTABLE_LINKER__Exo4_Release CMakeFiles/Exo4.dir/C-String.cpp.obj
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Exo4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Exo4.exe
+  TARGET_IMPLIB = libExo4.dll.a
+  TARGET_PDB = Exo4.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -169,6 +202,8 @@ build Exo2: phony Exo2.exe
 
 build Exo3: phony Exo3.exe
 
+build Exo4: phony Exo4.exe
+
 build Project: phony Project.exe
 
 # =============================================================================
@@ -179,7 +214,7 @@ build Project: phony Project.exe
 #############################################
 # Folder: C:/Users/hhaym/Documents/TD C++/electif-C-/Project/cmake-build-release
 
-build all: phony Project.exe Exo2.exe Exo3.exe
+build all: phony Project.exe Exo2.exe Exo3.exe Exo4.exe
 
 # =============================================================================
 # Built-in targets

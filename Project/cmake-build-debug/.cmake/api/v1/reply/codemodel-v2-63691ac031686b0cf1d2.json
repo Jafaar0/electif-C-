@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.29"
@@ -17,11 +17,12 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -34,7 +35,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -43,21 +45,28 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Exo2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Exo2-Release-b9c6c879ff8d4d7c5470.json",
+					"jsonFile" : "target-Exo2-Debug-2f087497728ea1f601c7.json",
 					"name" : "Exo2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Exo3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Exo3-Release-e3010f5f9f23f5578a72.json",
+					"jsonFile" : "target-Exo3-Debug-b46e46e029245ccd170c.json",
 					"name" : "Exo3",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Exo4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exo4-Debug-d1d3dad070b309d03261.json",
+					"name" : "Exo4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Project-Release-4db19d53524ac53940a0.json",
+					"jsonFile" : "target-Project-Debug-03a2a7f9177119fdf47e.json",
 					"name" : "Project",
 					"projectIndex" : 0
 				}
@@ -67,7 +76,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/hhaym/Documents/TD C++/electif-C-/Project/cmake-build-release",
+		"build" : "C:/Users/hhaym/Documents/TD C++/electif-C-/Project/cmake-build-debug",
 		"source" : "C:/Users/hhaym/Documents/TD C++/electif-C-/Project"
 	},
 	"version" : 
