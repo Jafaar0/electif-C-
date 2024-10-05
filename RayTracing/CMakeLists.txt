@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.29)
-project(Seance2 C)
+project(RayTracing)
 
 set(CMAKE_C_STANDARD 23)
 

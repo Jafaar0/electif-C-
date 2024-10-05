@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Seance2.exe"
+			"path" : "Exo1.exe"
 		},
 		{
-			"path" : "Seance2.pdb"
+			"path" : "Exo1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "Seance2::@6890427a1f51a3e7e1df",
+	"id" : "Exo1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "Seance2",
-	"nameOnDisk" : "Seance2.exe",
+	"name" : "Exo1",
+	"nameOnDisk" : "Exo1.exe",
 	"paths" : 
 	{
 		"build" : ".",

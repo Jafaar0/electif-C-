@@ -1,3 +1,0 @@
-C:/Users/hhaym/Documents/TD C++/electif-C-/Seance2/cmake-build-debug/CMakeFiles/Seance2.dir
-C:/Users/hhaym/Documents/TD C++/electif-C-/Seance2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/hhaym/Documents/TD C++/electif-C-/Seance2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
