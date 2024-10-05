@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "RayTracing",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Exo1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Exo1-Debug-ebf18edd8a900d38a3ff.json",
+					"jsonFile" : "target-Exo1-Debug-e8127501549ce9b75e50.json",
 					"name" : "Exo1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Exo2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exo2-Debug-4633b86008e38a162840.json",
+					"name" : "Exo2",
 					"projectIndex" : 0
 				}
 			]
