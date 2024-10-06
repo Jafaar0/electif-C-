@@ -67,5 +67,5 @@ inline Vec3 operator*(const Vec3& b, const float a) {
     return result;
 }
 inline std::ostream& operator<<(std::ostream& out, const Vec3& a) {
-    return out << "("<<a.coord[0] << " " << a.coord[1] << " " << a.coord[2]<<")"<<std::endl;
+    return out <<a.coord[0] << " " << a.coord[1] << " " << a.coord[2]<<std::endl;
 }
