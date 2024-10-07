@@ -19,3 +19,13 @@ struct Image {
         return data[y*width+x];
     }
 };
+
+struct Sphere {
+    Vec3 center;
+    double radius;
+};
+
+struct Ray {
+    Vec3 center;
+    Vec3 direction = {{0,0,1}};
+};

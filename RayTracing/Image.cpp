@@ -53,6 +53,51 @@ Image createCocoricoImage() {
     return image;
 }
 
+Image createBlankImage() {
+    Image image;
+    for (int x = 0; x < Image::width; x++) {
+        for (int y = 0; y < Image::height; y++) {
+            image(x,y) = Color {{1,1,1}};
+        }
+    }
+    return image;
+}
+
+double intersect(const Sphere& sphere, const Ray& ray) {
+    double a = dot(ray.direction,ray.direction);
+    double b = -2*dot(ray.direction,sphere.center-ray.center);
+    double c = dot(sphere.center-ray.center,sphere.center-ray.center) - sphere.radius*sphere.radius;
+
+    double discriminant = b*b - 4*a*c;
+    if (discriminant < 0) {
+        return -1;
+    }
+    else if(discriminant == 0) {
+        return -b/(2*a);
+    }
+    else {
+        return (-b - sqrt(discriminant))/(2*a);
+    }
+}
+
+Image drawSphereWithRay(const Sphere& sphere) {
+    Image image = createBlankImage();
+    Ray ray = {{1,1,0}};
+    for (float x = 0; x < Image::width; x++) {
+        for (float y = 0; y < Image::height; y++) {
+            // Ray ray = {{x/Image::width*2-1,y/Image::height*2-1,0}};
+            float t = intersect(sphere,ray);
+            if (t>=0) {
+                // std::cout<<t<<"\n"<<std::endl;
+                image(x,y) = Color {{0,0,0}};
+            }
+
+        }
+    }
+    return image;
+
+}
+
 
 
 int main() {
@@ -63,6 +108,10 @@ int main() {
     // a = {{5,5,5}};
     // std::cout << image(8,6) << std::endl;
 
-    Image image = createGradientImage();
+    // Image image = createGradientImage();
+
+    std::cout<<"a\n";
+    Image image = drawSphereWithRay(Sphere({100,100,-1,50}));
+    std::cout<<"b\n";
     createFile(image);
 }
