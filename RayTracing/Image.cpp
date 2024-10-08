@@ -82,10 +82,10 @@ double intersect(const Sphere& sphere, const Ray& ray) {
 
 Image drawSphereWithRay(const Sphere& sphere) {
     Image image = createBlankImage();
-    Ray ray = {{1,1,0}};
+    // Ray ray = {{1,1,0}};
     for (float x = 0; x < Image::width; x++) {
         for (float y = 0; y < Image::height; y++) {
-            // Ray ray = {{x/Image::width*2-1,y/Image::height*2-1,0}};
+            Ray ray = {{x,y,0}};
             float t = intersect(sphere,ray);
             if (t>=0) {
                 // std::cout<<t<<"\n"<<std::endl;
@@ -111,7 +111,7 @@ int main() {
     // Image image = createGradientImage();
 
     std::cout<<"a\n";
-    Image image = drawSphereWithRay(Sphere({100,100,-1,50}));
+    Image image = drawSphereWithRay(Sphere({100,100,100,50}));
     std::cout<<"b\n";
     createFile(image);
 }
