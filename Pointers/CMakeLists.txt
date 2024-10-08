@@ -4,3 +4,4 @@ project(Pointers)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(Pointers main.cpp)
+add_executable(Echo Echo.cpp)

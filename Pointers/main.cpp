@@ -40,14 +40,14 @@ char* concatenate(const char* s1, const char* s2) {
     return result;
 }
 
-int main() {
-    const char* s = "rizz";
-    char* t = new char[8]{'r','i','z','z','l','e','r','\0'};
-    char pal[] = {'t','a','c','o','c','a','t','\0'};
-    printf("%s\n", reverse(t));
-    char* test = concatenate(s, t);
-    printf("%s\n", test);
-    delete[] test;
-    delete[] t;
-    return 0;
-}
+// int main() {
+//     const char* s = "rizz";
+//     char* t = new char[8]{'r','i','z','z','l','e','r','\0'};
+//     char pal[] = {'t','a','c','o','c','a','t','\0'};
+//     printf("%s\n", reverse(t));
+//     char* test = concatenate(s, t);
+//     printf("%s\n", test);
+//     delete[] test;
+//     delete[] t;
+//     return 0;
+// }
