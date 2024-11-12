@@ -51,4 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Pointers.dir/DependInfo.cmake"
   "CMakeFiles/Echo.dir/DependInfo.cmake"
+  "CMakeFiles/LinkedList.dir/DependInfo.cmake"
   )

@@ -5,3 +5,7 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(Pointers main.cpp)
 add_executable(Echo Echo.cpp)
+add_executable(LinkedList Node.cpp Node.h
+        dicho.cpp
+        LinkedList.cpp
+        LinkedList.h)

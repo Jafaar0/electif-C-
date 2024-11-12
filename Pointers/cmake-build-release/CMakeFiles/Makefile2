@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = "C:\Users\hhaym\Documents\TD C++\electif-C-\Pointers\cmake-bu
 # The main recursive "all" target.
 all: CMakeFiles/Pointers.dir/all
 all: CMakeFiles/Echo.dir/all
+all: CMakeFiles/LinkedList.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +74,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/Pointers.dir/clean
 clean: CMakeFiles/Echo.dir/clean
+clean: CMakeFiles/LinkedList.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -82,7 +84,7 @@ clean: CMakeFiles/Echo.dir/clean
 CMakeFiles/Pointers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pointers.dir\build.make CMakeFiles/Pointers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pointers.dir\build.make CMakeFiles/Pointers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\hhaym\Documents\TD C++\electif-C-\Pointers\cmake-build-release\CMakeFiles" --progress-num=3,4 "Built target Pointers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\hhaym\Documents\TD C++\electif-C-\Pointers\cmake-build-release\CMakeFiles" --progress-num=7,8 "Built target Pointers"
 .PHONY : CMakeFiles/Pointers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -126,6 +128,32 @@ Echo: CMakeFiles/Echo.dir/rule
 CMakeFiles/Echo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Echo.dir\build.make CMakeFiles/Echo.dir/clean
 .PHONY : CMakeFiles/Echo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LinkedList.dir
+
+# All Build rule for target.
+CMakeFiles/LinkedList.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\hhaym\Documents\TD C++\electif-C-\Pointers\cmake-build-release\CMakeFiles" --progress-num=3,4,5,6 "Built target LinkedList"
+.PHONY : CMakeFiles/LinkedList.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LinkedList.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hhaym\Documents\TD C++\electif-C-\Pointers\cmake-build-release\CMakeFiles" 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LinkedList.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hhaym\Documents\TD C++\electif-C-\Pointers\cmake-build-release\CMakeFiles" 0
+.PHONY : CMakeFiles/LinkedList.dir/rule
+
+# Convenience name for target.
+LinkedList: CMakeFiles/LinkedList.dir/rule
+.PHONY : LinkedList
+
+# clean rule for target.
+CMakeFiles/LinkedList.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/clean
+.PHONY : CMakeFiles/LinkedList.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

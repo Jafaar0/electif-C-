@@ -1,0 +1,22 @@
+# ninja log v6
+8	1663	7531225490840981	CMakeFiles/RayTrace.dir/main.cpp.obj	54bd1cedebd1d3c2
+50	1555	7531227519257885	CMakeFiles/RayTrace.dir/Intersection.cpp.obj	9b685835ed2349fd
+3218	3645	7531253570582667	RayTrace.exe	6ea2066cbd778c02
+15	459	7531254541614051	build.ninja	758cb77835c535f1
+40	3215	7531253538798180	CMakeFiles/RayTrace.dir/main_raytracing.cpp.obj	a49c330e83f54cdd
+80	1419	7531227519557651	CMakeFiles/RayTrace.dir/Vec3.cpp.obj	48d23b17b70fa3e1
+32	1852	7531252798339844	CMakeFiles/RayTrace.dir/Image.cpp.obj	b43acbd624d33775
+55	1608	7531261361604918	CMakeFiles/RayTrace.dir/HitRecord.cpp.obj	ee212b2e2a8f9229
+33	1890	7531261361393054	CMakeFiles/RayTrace.dir/main_raytracing.cpp.obj	a49c330e83f54cdd
+47	1923	7531261361528043	CMakeFiles/RayTrace.dir/Image.cpp.obj	b43acbd624d33775
+1923	2122	7531261380285543	RayTrace.exe	7f48c4dfa8350750
+12	1615	7531274110747133	CMakeFiles/RayTrace.dir/main_raytracing.cpp.obj	a49c330e83f54cdd
+19	1685	7531274110827956	CMakeFiles/RayTrace.dir/Image.cpp.obj	b43acbd624d33775
+1685	1929	7531274127481031	RayTrace.exe	7f48c4dfa8350750
+15	2000	7531274220926769	CMakeFiles/RayTrace.dir/main_raytracing.cpp.obj	a49c330e83f54cdd
+2001	2292	7531274240784232	RayTrace.exe	7f48c4dfa8350750
+20	1704	7531286374800391	CMakeFiles/RayTrace.dir/Intersection.cpp.obj	9b685835ed2349fd
+27	1741	7531286374859542	CMakeFiles/RayTrace.dir/HitRecord.cpp.obj	ee212b2e2a8f9229
+13	1891	7531286374727021	CMakeFiles/RayTrace.dir/main_raytracing.cpp.obj	a49c330e83f54cdd
+1891	2191	7531286393501131	RayTrace.exe	7f48c4dfa8350750
+25	1755	7531295898231618	CMakeFiles/RayTrace.dir/Intersection.cpp.obj	9b685835ed2349fd

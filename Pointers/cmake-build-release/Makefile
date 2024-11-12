@@ -141,6 +141,19 @@ Echo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Echo.dir\build.make CMakeFiles/Echo.dir/build
 .PHONY : Echo/fast
 
+#=============================================================================
+# Target rules for targets named LinkedList
+
+# Build rule for target.
+LinkedList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LinkedList
+.PHONY : LinkedList
+
+# fast build rule for target.
+LinkedList/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/build
+.PHONY : LinkedList/fast
+
 Echo.obj: Echo.cpp.obj
 .PHONY : Echo.obj
 
@@ -164,6 +177,78 @@ Echo.s: Echo.cpp.s
 Echo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Echo.dir\build.make CMakeFiles/Echo.dir/Echo.cpp.s
 .PHONY : Echo.cpp.s
+
+LinkedList.obj: LinkedList.cpp.obj
+.PHONY : LinkedList.obj
+
+# target to build an object file
+LinkedList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.obj
+.PHONY : LinkedList.cpp.obj
+
+LinkedList.i: LinkedList.cpp.i
+.PHONY : LinkedList.i
+
+# target to preprocess a source file
+LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.i
+.PHONY : LinkedList.cpp.i
+
+LinkedList.s: LinkedList.cpp.s
+.PHONY : LinkedList.s
+
+# target to generate assembly for a file
+LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.s
+.PHONY : LinkedList.cpp.s
+
+Node.obj: Node.cpp.obj
+.PHONY : Node.obj
+
+# target to build an object file
+Node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/Node.cpp.obj
+.PHONY : Node.cpp.obj
+
+Node.i: Node.cpp.i
+.PHONY : Node.i
+
+# target to preprocess a source file
+Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/Node.cpp.i
+.PHONY : Node.cpp.i
+
+Node.s: Node.cpp.s
+.PHONY : Node.s
+
+# target to generate assembly for a file
+Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/Node.cpp.s
+.PHONY : Node.cpp.s
+
+dicho.obj: dicho.cpp.obj
+.PHONY : dicho.obj
+
+# target to build an object file
+dicho.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/dicho.cpp.obj
+.PHONY : dicho.cpp.obj
+
+dicho.i: dicho.cpp.i
+.PHONY : dicho.i
+
+# target to preprocess a source file
+dicho.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/dicho.cpp.i
+.PHONY : dicho.cpp.i
+
+dicho.s: dicho.cpp.s
+.PHONY : dicho.s
+
+# target to generate assembly for a file
+dicho.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/dicho.cpp.s
+.PHONY : dicho.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -198,10 +283,20 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Echo
+	@echo ... LinkedList
 	@echo ... Pointers
 	@echo ... Echo.obj
 	@echo ... Echo.i
 	@echo ... Echo.s
+	@echo ... LinkedList.obj
+	@echo ... LinkedList.i
+	@echo ... LinkedList.s
+	@echo ... Node.obj
+	@echo ... Node.i
+	@echo ... Node.s
+	@echo ... dicho.obj
+	@echo ... dicho.i
+	@echo ... dicho.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
